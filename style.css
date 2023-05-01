@@ -1,0 +1,320 @@
+:root {
+    --primary-clr: rgb(0, 110, 255);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e2e1dc;
+}
+header {
+    margin-bottom: 4%;
+    background-color: #3f4458;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header h1{
+    color: aquamarine;
+    padding: 1.5rem;
+    text-align: center;
+}
+header .mes-selecao {
+    padding: 10px 10px;
+    width: 100%;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+header div {
+    color: rgb(135, 136, 149);
+    cursor: pointer;
+    max-width: 70%;
+    display: flex;
+    justify-content: center;
+}
+header div div:nth-child(10) {
+    border-right: none;
+}
+header div div:hover {
+    transition: 1s;
+    color: rgb(177, 58, 177);
+    font-size: 1.5rem;
+}
+header div .selecionado {
+    background-color: aquamarine;
+    color: blue;
+    border-radius: 10px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+header div div:last-child {
+    border-right: transparent;
+}
+.conteudo {
+    width: 1200px;
+    min-height: 850px;
+    padding: 5px;
+    color: #fff;
+    display: flex;
+    border-radius: 10px;
+    background-color: #373c4f;
+}
+.parte-direita {
+    width: 60%;
+    padding: 20px;
+}
+
+.calendario {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #878895;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.calendario .mes {
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+.calendario .semanas {
+    display: flex;
+    padding: 0 1.25rem;
+}
+.calendario .semanas div {
+    font-weight: 900;
+    text-transform: uppercase;
+    width: 14.28%;
+    display: flex;
+    justify-content: center;
+}
+.calendario .dias {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    margin-bottom: 2rem;
+}
+.calendario .dias .dia {
+    font-size: 2rem;
+    width: 14.28%;
+    height: 5.63rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--primary-clr);
+    border: 1px solid #373c4f;
+    border-radius: 15%;
+}
+.calendario .dias .data-anterior,
+.calendario .dias .proxima-data {
+    color: #b3b3b3;
+}
+.calendario .dia:hover {
+    color: #fff;
+    background-color: var(--primary-clr);
+}
+.calendario .dias .hoje,
+.calendario .dias .feriado {
+    font-size: 2rem;
+}
+.calendario .dias .hoje {
+    color: #fff;
+    background-color: var(--primary-clr);
+    box-shadow: 0 0 10px 2px var(--primary-clr);
+}
+ .calendario .dias .feriado {
+    position: relative;
+    color: red;
+}
+.calendario .dias .feriado {
+    border-bottom: 10px solid orangered;
+} 
+.calendario .dias .feriado::after {
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 75%;
+    height: 6px;
+    border-radius: 30px;
+    transform: translateX(-50%);
+    background-color: red;
+} 
+.calendario .dias .feriado:hover:after {
+    background-color: #fff;
+    bottom: 20%;
+}
+.calendario .dias .feriado:hover {
+    background-color: red;
+} 
+.calendario .dias .dia:hover {
+    color: white;
+}
+/* PARTE DA ESQUERDA */
+.conteudo .parte-esquerda {
+    width: 40%;
+    padding: 1.25rem 0.5rem;
+}
+.feriado-imagem {
+    width: 100%;
+    height: 32.5rem;
+    border-radius: 1%;
+}
+.parte-esquerda .feriado-apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 2rem 1rem 2rem;
+}
+.parte-esquerda .feriado-primeiro-titulo {
+    font-size: 2rem;
+}
+.parte-esquerda .feriado-ano {
+    font-size: 1rem;
+    color: #878895;
+}
+.feriados {
+    padding-bottom: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.feriados .feriado {
+    min-height: 4.37rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 4.37rem;
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(90deg, #3f4458, transparent);
+}
+.feriados .feriado:nth-child(even) {
+    background: transparent;
+}
+.feriados .feriado:hover {
+    background: linear-gradient(90deg, var(--primary-clr), transparent);
+}
+
+.feriados .feriado .feriado-descricao {
+    display: flex;
+    align-items: center;
+}
+.feriados .feriado .feriado-descricao .feriado-titulo {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 20px;
+}
+.feriados .feriado .feriado-descricao span {
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+.feriados .feriado:hover .feriado-descricao span {
+    height: 15px;
+    width: 15px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+.feriados .feriado .feriado-dia {
+    font-size: 0.8rem;
+    color: #878895;
+    margin-left: 18px;
+}
+footer {
+    margin-top: 4%;
+    width: 100%;
+    background-color: #373c4f;
+    padding: 3rem;
+}
+footer div {
+    font-size: 1.3rem;
+    color: aquamarine;
+    display: flex;
+    justify-content: center;
+}
+
+/* @media (max-width: 1000px) {
+    body {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .conteudo {
+        min-height: 100vh;
+        flex-direction: column;
+        border-radius: 0;
+    }
+
+    .conteudo .parte-esquerda,
+    .conteudo .parte-direita {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .calendario .mes {
+        height: 75px;
+    }
+
+    .calendario .semanas {
+        height: 50px;
+    }
+
+    .calendario .dias .dia {
+        height: 40px;
+        font-size: 0.8rem;
+    }
+
+    .calendario .dias .feriado,
+    .calendario .dias .hoje {
+        font-size: 1rem;
+    }
+
+    .parte-esquerda .feriado-apresentacao {
+        padding: 20px;
+    }
+
+    .feriado-apresentacao .feriado-primeiro-titulo {
+        font-size: 1.5rem;
+    }
+
+    .feriado-apresentacao .feriado-ano {
+        font-size: 1rem;
+    }
+
+    .feriados .feriado .feriado-descricao span {
+        position: absolute;
+        height: 15px;
+        width: 15px;
+    }
+
+    .feriados .feriado:hover .feriado-descricao span {
+        height: 10px;
+        width: 10px;
+    }
+} */
