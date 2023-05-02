@@ -6,7 +6,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 body {
@@ -17,6 +18,8 @@ body {
     justify-content: center;
     background-color: #e2e1dc;
     background-image: url(./img/fundo.jpg);
+    background-size: contain;
+    
 }
 
 header {
@@ -30,7 +33,18 @@ header {
 }
 
 header h1 {
-    color: aquamarine;
+    color: rgb(233, 233, 233);
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    padding: 1.5rem;
+}
+
+header h1:hover {
+    color: rgb(233, 233, 233);
+    text-shadow: 2px 2px 30px #37fff5;
+    text-shadow: ;
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
     padding: 1.5rem;
 }
 
