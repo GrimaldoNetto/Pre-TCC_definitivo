@@ -1,1 +1,31 @@
 # Pre-TCC_definitivo
+
+Olá, sejam bem vindos! 
+
+Meu nome é Grimaldo Netto e esse é meu trabalho em conjunto com Pedro Patrício, Felipe Romão e Giovana Lima para o Instituto da Oportunidade Social, no curso Desenvolvimento Web - Noite 
+
+## Ferramentas que estamos aprendendo no curso
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" />
+          
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
+          
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
+          
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+          
+
+##Explicação sobre nosso projeto de calendário 
+
+Aqui temos um projeto de calendário, referente ao mês de Novembro do ano 2023, onde utilizamos HTML e CSS para estilização. Incluímos uma imagem com o tema do mês de Novembro (Novembro Azul) 
+
+Ilustramos os meses de todo o ano, através de Divs e a maior parte do projeto foi toda mencionada e estilizada pela classe "conteudo" através 
+
+Nosso objetivo era de forma responsiva mostrar os dias do mês, com destaque nos feriados e também chamar atenção para o tema Novembro Azul. 
+
+Esperamos que gostem da estilização ;)
+
+Até mais!
